@@ -1,0 +1,31 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		//Test case-1  {0,10,20,100}
+		//Test case-2  {0,100,20,100}
+		//Test case-3  {500,10,20,100}
+		int arr[] = {10,10,00,100};
+		
+		System.out.println(""+CheckSOrtedOrNot(arr));
+	}
+	
+	static	Boolean  CheckSOrtedOrNot(int arr[]){
+		
+		
+		for(int i=1;i<arr.length;i++){
+			if(arr[i]<arr[i-1]) return false;
+			
+		}
+		
+		return true;
+	}
+}
