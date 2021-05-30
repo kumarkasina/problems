@@ -1,0 +1,44 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		
+		int arr[] = {10,10,10,30,100};
+		
+		System.out.println(""+rmD(arr));
+		
+		System.out.println("After Removal");
+
+       for(int i = 0; i < arr.length; i++)
+       {
+       		System.out.print(arr[i]+" ");
+       }
+
+	}
+	
+	
+	static	int  rmD(int arr[]){
+		
+		int len = arr.length;
+		int	res=1;
+		for(int i=0;i<len;i++){
+			
+		if(arr[i]!=arr[res]){
+			arr[res]=arr[i];
+			res++;
+				
+		}
+		
+		}
+	
+		return res;
+	}
+}

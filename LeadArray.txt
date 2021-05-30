@@ -1,0 +1,39 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		
+		int arr[] = {7,10,4,10,6,5,2};
+		
+		LeadArray(arr);
+		
+	
+
+	}
+	
+	
+	static	int  LeadArray(int arr[]){
+		
+		int len = arr.length;
+		int	res=1;
+		int cur=arr[len-1];
+		System.out.println(""+cur);
+		for(int i=len-2;i>0;i--){
+			if(arr[i]>cur){
+				cur=arr[i];
+					System.out.println(""+cur);
+			}	
+		
+		}
+	
+		return res;
+	}
+}
